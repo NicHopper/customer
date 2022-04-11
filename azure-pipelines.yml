@@ -13,5 +13,3 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '**\*.sqlproj'
-    vsVersion: '16.0'
-    msbuildArchitecture: 'x64'
