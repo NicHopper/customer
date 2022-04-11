@@ -20,9 +20,3 @@ steps:
     SourceFolder: '$(agent.builddirectory)\s'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
-    
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: 'customer'
-      publishLocation: 'Container'
